@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'acceuil de l'association Bretagne Vivante">
+    <meta name="author" content="Gwenn Le Roch">
+    <title>Bretagne Vivante - Promesse de don</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Styles personnalisés -->
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Composant sidebar offcanvas -->
+    <nav class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="true" data-bs-scroll="true">
+
+        <div class="offcanvas-header border-bottom">
+            <a href="/" class="d-flex align-items-center text-decoration-none offcanvas-title d-sm-block">
+                <img src="Ressources/logo.jpg" alt="Bretagne Vivante" width="250px">
+            </a>
+        </div>
+
+        <div class="offcanvas-body px-0">
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#asso-collapse" aria-expanded="false">
+                        L'association
+                    </button>
+                    <div class="collapse" id="asso-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="/" class="rounded">Notre projet associatif</a></li>
+                            <li><a href="#" class="rounded">Notre conseil d'administration</a></li>
+                            <li><a href="#" class="rounded">Notre équipe salariée</a></li>
+                            <li><a href="#" class="rounded">Offres d'emplois et de stage</a></li>
+                            <li><a href="#" class="rounded">Nos partenaires</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#actions-collapse" aria-expanded="false">
+                        Nos actions
+                    </button>
+                    <div class="collapse" id="actions-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">Connaître</a></li>
+                            <li><a href="#" class="rounded">Protéger</a></li>
+                            <li><a href="#" class="rounded">Militer</a></li>
+                            <li><a href="#" class="rounded">Partager</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#agir-collapse" aria-expanded="false">
+                        Agir ensemble
+                    </button>
+                    <div class="collapse" id="agir-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">Bretagne vivante près de chez vous</a></li>
+                            <li><a href="#" class="rounded">Nos réserves naturelles</a></li>
+                            <li><a href="#" class="rounded">J'adhère</a></li>
+                            <li><a href="#" class="rounded">J'agis</a></li>
+                            <li><a href="don.html" class="rounded">Je fais un don</a></li>
+                            <li><a href="#" class="rounded">La fédération Bretagne Nature Environnement</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#theme-collapse" aria-expanded="false">
+                        Nos thématiques
+                    </button>
+                    <div class="collapse" id="theme-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">La biodiversité</a></li>
+                            <li><a href="#" class="rounded">Les milieux naturels</a></li>
+                            <li><a href="#" class="rounded">La nature et l'homme</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#publi-collapse" aria-expanded="false">
+                        Nos publications
+                    </button>
+                    <div class="collapse" id="publi-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">Nos revues</a></li>
+                            <li><a href="#" class="rounded">Nos communiqués de presse</a></li>
+                            <li><a href="#" class="rounded">Nos expositions</a></li>
+                            <li><a href="#" class="rounded">Notre photothèque</a></li>
+                            <li><a href="#" class="rounded">Notre vidéothèque</a></li>
+                            <li><a href="https://fr.wikipedia.org/wiki/Association_caritative" class="rounded">Outils et
+                                    guides techniques</a></li>
+                            <li><a href="#" class="rounded">Notre centre de documentation</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Barre de navigation -->
+    <div class="nav-localisation">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item"><a href="#" class="nav-link">Côtes d'Armor<a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Finistère</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Morbihan</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ille-et-Vilaine</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Loire Atlantique</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">France</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Titre offcanvas de l'association -->
+    <a id="sidebarCollapse" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+        <h1>Bretagne Vivante</h1>
+    </a>
+
+    <!-- Caroussel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#eb2632" />
+                </svg>
+
+                <div class="container first-color">
+                    <div class="carousel-caption text-start">
+                        <h1>Faites un don.</h1>
+                        <p>Aidez-nous à protéger notre environnement local.</p>
+                        <p><a class="btn btn-lg btn-primary" href="don.html">Donnez dès maintenant</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#f0ab8d" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Devenez adhérent.</h1>
+                        <p>Rejoignez une belle expérience.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">En savoir plus</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#f6e4ad" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Agissez avec nous.</h1>
+                        <p>Retrouvez les événements près de chez vous.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Evenement</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Boutton offcanvas d'affichage de menu -->
+    <button id="sidebarCollapse" class="float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button"
+        aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Page principale -->
+    <main class="container">
+        <div class="row">
+            <div class="col p-4">
+
+                <h3>Les valeurs qui guident l’action de Bretagne Vivante </h3>
+                <p>Bretagne Vivante agit pour favoriser la protection de la nature sur le territoire de la Bretagne
+                    historique.</p>
+                <p>L’être humain étant partie intégrante de la biodiversité, la préservation de celle-ci constitue pour
+                    l’association à la fois une éthique et une nécessité vitale. Envisagée d’une manière globale, la
+                    préservation de la biodiversité impose de s’intéresser aux problématiques environnementales* au sens
+                    large.</p>
+                <p>Bretagne Vivante base son action sur la connaissance et la compréhension des écosystèmes.</p>
+                <p>Bretagne Vivante développe une action éducative envers tous les publics.</p>
+                <p>Bretagne Vivante est une association militante de défense de la nature et de l’environnement : elle
+                    s’engage dans la société, prend position sur les enjeux environnementaux et est force de
+                    proposition. Elle entend prendre une part active à la définition des priorités et être un acteur
+                    important dans leur mise en œuvre.</p>
+                <p>Bretagne Vivante est consciente qu’elle ne peut agir seule.</p>
+                <p>L’association veut échanger, mutualiser, coordonner et agir avec tous ceux qui partagent tout ou
+                    partie de ses valeurs et de ses finalités.</p>
+                <p>Bretagne vivante est persuadée que la protection de la biodiversité ne sera effective que si elle est
+                    partagée par le plus grand nombre.</p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="container text-muted border-top mt-auto">
+        <div class="row">
+            <div class="col p-4">
+                Copyright All rights reserved | Developed by Gwenn Le Roch 2022
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
