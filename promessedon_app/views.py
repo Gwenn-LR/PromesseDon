@@ -1,7 +1,7 @@
+import promessedon_app.data as data
 from flask import Flask, render_template, request
-import data
 
-app = Flask(__name__)
+from . import app
 
 @app.route("/")
 def index():
@@ -32,6 +32,3 @@ def bilan():
     dons = data.getDons()
     montantTotal = data.getDonTotal(dons)
     return render_template("bilan.html", dons = dons, montantTotal = montantTotal)
-
-if __name__ == "__main__":
-    app.run(debug=True)

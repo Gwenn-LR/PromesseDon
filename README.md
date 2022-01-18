@@ -2,17 +2,26 @@
 
 Le projet contient :
 <ul>
-    <li> Ressources : le dossier contenant les images des pages</li>
-    <li> index.html : la page d'accueil</li>
-    <li> index.css : la page de styles associée</li>
-    <li> index.js : le fichier JavaScript associé</li>
-    <li> don.html : la page de don</li>
-    <li> don.css : la page de styles associée</li>
+    <li> .vscode : contient les configurations de VS Code</li>
+    <li> promessedon_app : contient les fichiers de l'application</li>
+    <ul>
+        <li> static : contient tous les fichiers CSS et JS </li>
+        <li> templates : contient tous les modèles à afficher</li>
+        <li> __init__.py : permet à l'interprétateur de savoir qu'un répertoire contient un code Python dans le module</li>
+        <li> data.py : fichier permettant le traitement des données</li>
+        <li> views.py : fichier permettant le routage et de définir les fonctions de visualisation</li>
+        <li> webapp.py : fichier de point d'entrée pour l'application</li>
+    </ul>
+    <li> requirements.txt : fichier exporté depuis venv</li>
+    
 </ul>
+
+#
 
 Ce projet reste une maquette, et de nombreuses améliorations restent possibles :
 <ul>
     <li> Amélioration de la position du bouton de menu</li>
     <li> Restructuration des pages (inclure les composants dans des div afin de pouvoir facilement les ordonner</li>
-    <li> ...</li>
+    <li> Créer une interface de connexion pour les utilisateurs déjà enregistrés</li>
+    <li>...</li>
 </ul>
