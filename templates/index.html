@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Bretagne Vivante{% endblock %}
+
+{% block css %}{{ url_for('static', filename='index.css') }}{% endblock %}
+
+{% block carroussel %}
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#eb2632" />
+        </svg>
+
+        <div class="container first-color">
+            <div class="carousel-caption text-start">
+                <h1>Faites un don.</h1>
+                <p>Aidez-nous à protéger notre environnement local.</p>
+                <p><a class="btn btn-lg btn-primary" href="{{ url_for('don') }}">Donnez dès maintenant</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#f0ab8d" />
+        </svg>
+
+        <div class="container">
+            <div class="carousel-caption">
+                <h1>Devenez adhérent.</h1>
+                <p>Rejoignez une belle expérience.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">En savoir plus</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#f6e4ad" />
+        </svg>
+
+        <div class="container">
+            <div class="carousel-caption text-end">
+                <h1>Agissez avec nous.</h1>
+                <p>Retrouvez les événements près de chez vous.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Evenement</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col p-4">      
+
+        <h3>Les valeurs qui guident l’action de Bretagne Vivante </h3>
+        <p>Bretagne Vivante agit pour favoriser la protection de la nature sur le territoire de la Bretagne
+            historique.</p>
+        <p>L’être humain étant partie intégrante de la biodiversité, la préservation de celle-ci constitue pour
+            l’association à la fois une éthique et une nécessité vitale. Envisagée d’une manière globale, la
+            préservation de la biodiversité impose de s’intéresser aux problématiques environnementales* au sens
+            large.</p>
+        <p>Bretagne Vivante base son action sur la connaissance et la compréhension des écosystèmes.</p>
+        <p>Bretagne Vivante développe une action éducative envers tous les publics.</p>
+        <p>Bretagne Vivante est une association militante de défense de la nature et de l’environnement : elle
+            s’engage dans la société, prend position sur les enjeux environnementaux et est force de
+            proposition. Elle entend prendre une part active à la définition des priorités et être un acteur
+            important dans leur mise en œuvre.</p>
+        <p>Bretagne Vivante est consciente qu’elle ne peut agir seule.</p>
+        <p>L’association veut échanger, mutualiser, coordonner et agir avec tous ceux qui partagent tout ou
+            partie de ses valeurs et de ses finalités.</p>
+        <p>Bretagne vivante est persuadée que la protection de la biodiversité ne sera effective que si elle est
+            partagée par le plus grand nombre.</p>
+
+    </div>
+</div>
+{% endblock %}

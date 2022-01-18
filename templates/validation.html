@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Validation du don{% endblock %}
+
+{% block meta %}
+<meta http-equiv="refresh" content="3 ; {{ url_for('bilan') }}" />
+{% endblock %}
+
+
+{% block css %}{{ url_for('static', filename='index.css') }}{% endblock %}
+
+{% block content %}
+<h1>Votre don a bien été pris en compte. Merci pour votre soutien !</h1>
+{% endblock %}

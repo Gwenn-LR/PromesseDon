@@ -6,8 +6,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
+  /* align-items: center; */
   padding-bottom: 40px;
   background-color: #f5f5f5;
 }
@@ -64,8 +63,10 @@ a:focus {
 /* Desktop view */
 @media (min-width: 576px) {
   .container {
-    padding-left: 250px;
-    margin-left: inherit;
+    /* padding-left: 250px; */
+    margin: auto auto auto auto;
+
+    align-content: center;
 
   }
   .navbar {
@@ -83,6 +84,11 @@ a:focus {
 
   body {
     margin-left: 250px;
+  }
+
+  .nav-localisation {
+    /* max-width: 100%; */
+    align-content: center;
   }
 }
 
@@ -249,8 +255,13 @@ a:focus {
 }
 
 .navbar {
-    background-color: #282c73;
-  }
+  background-color: #282c73;
+}
+
+.nav-localisation {
+  background-color: #282c73;
+}
+  
 
 /* ---------------------------------------------------
     THEME SOMBRE DARK SIDEBAR OPTIONNEL

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Promesse de don{% endblock %}
+
+{% block css %}{{ url_for('static', filename='don.css') }}{% endblock %}
+
+
+{% block content %}
+
+<main class="form-signin">
+
+    <form action="{{ url_for('validation') }}" method="post">
+        <img class="mb-4" src="Ressources/logo.jpg" alt="" height="57">
+        <h1 class="h3 mb-3 fw-normal">Promesse de don</h1>
+
+        <div class="form-floating">
+            <input type="text" name="nom" class="form-control" id="floatingInput" placeholder="Martin" required>
+            <label for="floatingInput">Nom</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" name="prenom" class="form-control" id="floatingInput" placeholder="Pierre" required>
+            <label for="floatingInput">Prénom</label>
+        </div>
+        <div class="form-floating">
+            <input type="email" name="mail" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" name="adresse" class="form-control" id="floatingInput" placeholder="Ville, Etat/Région, Pays" required>
+            <label for="floatingInput">Adresse</label>
+        </div>
+        <div class="form-floating">
+            <input type="number" name="montant" class="form-control" id="floatingPassword" placeholder="Un gogolplex" required>
+            <label for="floatingPassword">Montant</label>
+        </div>
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me" required> Vous avez pris connaissance des conditions d'utilisation de vos organes
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Donner</button>
+    </form>
+</main>
+{% endblock %}

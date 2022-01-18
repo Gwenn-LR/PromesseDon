@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Bilan des promesses de don{% endblock %}
+
+{% block css %}{{ url_for('static', filename='bilan.css') }}{% endblock %}
+
+{% block content %}
+<div class="listeDonateurs">
+    <h1>Liste des donnateurs et des liens pour les contacter :</h1>
+    <ul>
+        {% for don in dons  %}
+        <li>{{ don["prenom"] }} {{ don["nom"] }} ({{ don["mail"] }}) : {{ don["montant"] }}€</li>
+        {% endfor %}
+    </ul>  
+</div>
+
+<div class="montantTotalComponent listeDonateurs">
+    <div class="MontantTotal">
+        <h1>Montant total des dons : {{ montantTotal }}€</h1>
+    </div>
+</div>
+{% endblock %}
