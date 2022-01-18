@@ -12,6 +12,8 @@ Le projet contient :
         <li> views.py : fichier permettant le routage et de définir les fonctions de visualisation</li>
         <li> webapp.py : fichier de point d'entrée pour l'application</li>
     </ul>
+    <li> promessedon.sql : le fichier de la base de données initiale</li>
+    <li> README.md : ce fichier</li>
     <li> requirements.txt : fichier exporté depuis venv</li>
     
 </ul>
